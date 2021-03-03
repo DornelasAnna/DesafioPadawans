@@ -1,9 +1,9 @@
-import react from 'react';
+/*import React from 'react'
 import { Link } from 'react-router-dom'
-const App=()=>
- {
 
-  return (
+const Navbar =() =>{
+return(
+   
     <div className="uk-position-relative">
     <div className="uk-position-top">
         <nav className="uk-navbar-container uk-navbar-transparent" uk-navbar>
@@ -22,8 +22,10 @@ const App=()=>
             </div>
         </nav>
     </div>
-  </div>
-  );
-}
+</div>
+    
+);
 
-export default App;
+
+}
+export default Navbar;*/
