@@ -1,28 +1,34 @@
 import react from 'react';
-import { Link } from 'react-router-dom'
+import Navbar from './Navbar';
+import { BrowserRouter , Switch, Route, Router } from 'react-router-dom';
+import Albuns from './Albuns';
+import Postagens from './Postagens';
+import Todos from './Todos';
+import Home from './home';
+
+
+
 const App=()=>
  {
-
   return (
-    <div className="uk-position-relative">
-    <div className="uk-position-top">
-        <nav className="uk-navbar-container uk-navbar-transparent" uk-navbar>
-            <div className="uk-navbar-left">
-                <ul className="uk-navbar-nav">
-                    <li className="uk-active">
-                        <Link to="/Albuns">Albuns</Link>
-                    </li>
-                    <li>
-                        <Link to="/Postagens">Postagens</Link>
-                    </li>
-                    <li>
-                        <Link to="/Todos">ToDos</Link>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-  </div>
+   
+    <BrowserRouter>
+       
+            
+          <Navbar/>
+          <div className="uk-container " > 
+          <Switch>
+            <Route path= "/" exact component={Home}/>
+            <Route path="/Albuns" component={Albuns} />
+            <Route path="/Postagens" component={Postagens} />
+            <Route path="/Todos"  component={Todos}/>
+          </Switch>
+        
+      </div>
+           
+    
+    </ BrowserRouter>
+ 
   );
 }
 
