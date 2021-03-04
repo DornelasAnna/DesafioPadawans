@@ -28,10 +28,11 @@ export default function Albuns()
 
   return (
     <body>
-       
+      < h1 className="tituloPagina">Álbuns </h1>
+    
     <table class= "uk-table uk-table-small  uk-table-hover  uk-table-divider">
-        <thead> 
-            <tr>
+        <thead > 
+            <tr  >
                 <th>Usuário</th>
                 <th>Id</th>
                 <th>Album </th>
@@ -47,6 +48,7 @@ export default function Albuns()
         ))}
         </tbody>
     </table>
+    
     </body>
   );
 }
