@@ -11,7 +11,7 @@ export default function Albuns()
     const [Albuns, setAlbuns] = useState([]);
     useEffect(() => {
 		async function fetchAlbuns() {
-			let url = "https://jsonplaceholder.typicode.com/posts";
+			let url = "https://jsonplaceholder.typicode.com/albums";
 			try {
 				let response = await fetch(url);
 				let json = await response.json();
