@@ -12,7 +12,7 @@
 * UIKit
 
 
-#Pré-requisitos
+# Pré-requisitos
   
   É possivel rodar o projeto de duas maneiras, uma delas pelos links das páginas presentes na pasta build,
 e outra rodando o projeto react.Mas para isso é necessario que o [Node.js](https://nodejs.org/en e o [React].(https://pt-br.reactjs.org/)
