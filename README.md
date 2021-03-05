@@ -16,7 +16,9 @@
   
   É possivel rodar o projeto de duas maneiras, uma delas pelos links das páginas presentes na pasta build,
 e outra rodando o projeto react.Mas para isso é necessario que o [Node.js](https://nodejs.org/en e o [React].(https://pt-br.reactjs.org/)
-estejam instalados em seu computador.Depois é necessario que os seguintes passos sejam seguidos:
+estejam instalados em seu computador. 
+
+##Rodando o projeto react:
 
 ### Clone o repositório
 $ git clone <https://github.com/DornelasAnna/DesafioPadawans.git>
