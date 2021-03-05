@@ -3,15 +3,14 @@
 <p align="center">Projeto realizado como etapa do processo seletivo da empresa Framework. </p>
 
 ##Tecnologias
-=================
-<!--ts-->
-  *React
-  *HTML
-  *CSS
-  *JavaScript
-  *bibliotecas:
-    *UIKit
-<!--te-->
+
+* React
+* HTML
+* CSS
+* JavaScript
+## bibliotecas:
+* UIKit
+
 
 ## Pré-requisitos
   
