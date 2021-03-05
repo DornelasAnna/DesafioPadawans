@@ -2,14 +2,16 @@
 
 <p align="center">Projeto realizado como etapa do processo seletivo da empresa Framework. </p>
 
-##Tecnologias:
-  -React
-  -HTML
-  -CSS
-  -JavaScript
-###bibliotecas:
-  -UIKit
-
+##Tecnologias
+=================
+<!--ts-->
+  *React
+  *HTML
+  *CSS
+  *JavaScript
+  *bibliotecas:
+    *UIKit
+<!--te-->
 
 ## Pré-requisitos
   
@@ -26,4 +28,7 @@ $ cd DesafioPadawans
 $ npm start
   Ou
 $ yarn start
-Apos isso será possivel rodar o projeto react em seu computador
+
+
+
+Apos isso serápossivel rodar o projeto react em seu computador
