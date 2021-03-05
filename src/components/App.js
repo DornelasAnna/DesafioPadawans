@@ -16,7 +16,7 @@ const App=()=>
        
             
           <Navbar/>
-          <div className="uk-container " > 
+          <div > 
           <Switch>
             <Route path= "/" exact component={Home}/>
             <Route path="/Albuns" component={Albuns} />

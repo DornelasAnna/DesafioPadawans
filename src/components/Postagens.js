@@ -2,13 +2,15 @@ import react from 'react';
 import { useState, useEffect } from "react";
 import "./style.css"
 
-interface posts {
-    userId: number;
-    id: number;
-    title: string;
-    body:string;
-  }
-export default function Todos()
+
+  const posts ={//Dicionario
+    "userId": 'userId',
+    "id":'id',
+    "title":'title', 
+  
+    'body':'body',
+  };
+export default function Postagens()
  { 
     const [data, setData] = useState([]);
     useEffect(() => {
@@ -31,15 +33,15 @@ export default function Todos()
         <div id="topoPostagem" >
             <h2 className="tituloPagina " id="tituloPostagem"> Postagens </h2>
         </div>
-        {data.map(posts=>(
-                <div >    
-                    <h3>{posts.title}</h3>
-                    <p> {posts.body}</p>
-                </div>
+        { data.map(posts=>(
+          <div id="postagem">
+            
+            <h1 className="tituloPostagem"> {posts.title}</h1>
+            <h4 className="userPostagem"> User:{posts.userId}</h4>
+            <p className="conteudoPostagem">{posts.body}</p>
+          </div>  
         ))}
-        
-    
-    
+         
     </div>
   );
 }

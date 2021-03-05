@@ -1,12 +1,12 @@
 import react from 'react';
 import { useState, useEffect } from "react";
 
-interface tarefas {
-    userId: number;
-    id: number;
-    title: string;
-    completed:Boolean;
-  }
+const tarefas ={//Dicionario
+    "userId": 'userId',
+    "id":'id',
+    "title":'title', 
+    "completed": 'completed',
+  };
 export default function Todos()
  { 
     const [data, setData] = useState([]);
@@ -30,10 +30,9 @@ export default function Todos()
   return (
     <body>
        <h1 className="tituloPagina">Tarefas</h1>
-       <form class="uk-search uk-search-large">
-          <span uk-search-icon></span>
-          <input class="uk-search-input" type="search" placeholder="Search"/>
-       </form>
+      
+    
+    <div className="uk-container"> 
     <table class= "uk-table uk-table-small  uk-table-hover  uk-table-divider uk-nav uk-nav-default " uk-sortable="cls-custom: uk-box-shadow uk-flex uk-flex-middle uk-background">
         <thead> 
             <tr>
@@ -48,10 +47,10 @@ export default function Todos()
         {data.map(tarefas=>(
             <tr key={tarefas.id}>  
                 <td> 
-                { tarefas.completed== true && <input className="uk-checkbox"
+                { tarefas.completed=== true && <input className="uk-checkbox"
                         type="checkbox"
                         checked />
-                }{tarefas.completed ==false &&< input className="uk-checkbox"
+                }{tarefas.completed ===false &&< input className="uk-checkbox"
                   type="checkbox" />    
                         }
                   
@@ -59,15 +58,14 @@ export default function Todos()
                 <td > {tarefas.userId}</td>
                 <td>{tarefas.id} </td>
                 <td>{tarefas.title} </td>
-                <td><button className="uk-icon-link" uk-icon="trash"></button></td>
-            
+               
             </tr>
         ))}
         </tbody>
     </table>
+    </div>
     
-    
-    <h3>Hi  </h3>
+ 
    
     </body>
   );

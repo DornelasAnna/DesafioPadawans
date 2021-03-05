@@ -19,7 +19,7 @@ return(
                             <Link to="/Postagens">Postagens</Link>
                         </li>
                         <li>
-                            <Link to="/Todos">ToDos</Link>
+                            <Link to="/Todos">Tarefas</Link>
                         </li>
                     </ul>
                 </div>

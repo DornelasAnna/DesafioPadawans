@@ -15,12 +15,12 @@
 
 #campoPostagem
 { 
-  background-color: rgb(239, 239, 239);
+  background-color: rgb(245, 244, 244);
   margin-left:15% ;
   margin-right:15%;
   border-style: none solid none solid;
   border-color: #5f3473;
-  height: 100%;
+  
 
 }
 .tituloPagina
@@ -28,11 +28,13 @@
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: bold;
   margin: 0 1.5% 1.5% 1.5%;
+  padding: 0.5% 1%;
   
 }
 #tituloPostagem
 {
   color: white;
+ 
 
 }
 #topoPostagem
@@ -44,5 +46,89 @@
   position: sticky;
   z-index: 4;
   top:12.5%;
+}
+html,body
+{
+  width: 100%;
+  height:100%;
+}
+.homeBackground
+{
+  background-color: #fafafa;
+  background-size:cover;
+  height: 100vh;
+  width: 100%;
+  
+  
+}
+footer
+{
+  padding: 2.5%;
+  background: #5f3473;
+  z-index: 3;
+  text-align: center;
+
+
+}
+#tituloFooter
+{ 
+  text-align: center;
+  color: rgb(216, 216, 216);
+  font-size: 20px;
+
+}
+
+#iconeLinkedin
+{
+  text-align: center;
+
+}
+#homeTitulo
+{
+  text-align:left;
+  font-size: 15vh;
+  font-family:fantasy;
+  text-shadow: 1px 1px 2px black;
+  color: #6d1496;
+  margin-left: 10vh;
+  padding-top: 10vh;
+  position: relative;
+  float: left;
+
+}
+#HomeImageContainer{
+  height: 10vh;
+  width: 15vh;
+}
+
+#homeImage{
+  width: 50%;
+  height: auto;
+  padding-top: 4%;
+  padding-right: 10%;
+  position: static;
+  display: fixed;
+  float: right;
+}
+#postagem
+{
+  background-color: white;
+  margin: 1%;
+  border-radius: 10px;
+  
+  word-break: break-word;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+.tituloPostagem ,.conteudoPostagem ,.userPostagem
+{
+  margin: 2.5%;
+  padding-bottom: 2.5%;
+
+}
+.conteudoPostagem
+{
+  text-align: justify;
+
 }
 

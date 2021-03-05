@@ -1,11 +1,13 @@
 import react from 'react';
 import { useState, useEffect } from "react";
 
-interface Album {
-    userId: number;
-    id: number;
-    title: string;
-  }
+
+  const Album ={//Dicionario
+    "userId": 'userId',
+    "id":'id',
+    "title":'title', 
+    
+  };
 export default function Albuns()
  { 
     const [Albuns, setAlbuns] = useState([]);
@@ -29,26 +31,26 @@ export default function Albuns()
   return (
     <body>
       < h1 className="tituloPagina">Álbuns </h1>
-    
-    <table class= "uk-table uk-table-small  uk-table-hover  uk-table-divider">
-        <thead > 
-            <tr  >
-                <th>Usuário</th>
-                <th>Id</th>
-                <th>Album </th>
-            </tr>
-        </thead>
-        <tbody>
-           {Albuns.map(Album=>(
-            <tr key={Album.userId}>   
-                <td > {Album.userId}</td>
-                <td>{Album.id} </td>
-                <td>{Album.title} </td>
-            </tr>
-        ))}
-        </tbody>
-    </table>
-    
+    <div className="uk-container">
+		<table class= "uk-table uk-table-small  uk-table-hover  uk-table-divider ">
+			<thead > 
+				<tr  >
+					<th>Usuário</th>
+					<th>Id</th>
+					<th>Album </th>
+				</tr>
+			</thead>
+			<tbody>
+			{Albuns.map(Album=>(
+				<tr key={Album.userId}>   
+					<td > {Album.userId}</td>
+					<td>{Album.id} </td>
+					<td>{Album.title} </td>
+				</tr>
+			))}
+			</tbody>
+		</table>
+	</div>
     </body>
   );
 }
