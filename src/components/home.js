@@ -1,13 +1,11 @@
 import react from 'react';
 import "./style.css";
 import HomeImage from './HomeImage.png'; // with import
-
+/*Página inicial*/ 
 
 
 const Home=()=>
  {
-  
-
   return (
   <div>
 

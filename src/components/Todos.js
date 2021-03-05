@@ -1,33 +1,26 @@
 import react from 'react';
 import { useState, useEffect } from "react";
 
-const tarefas ={//Dicionario
-    "userId": 'userId',
-    "id":'id',
-    "title":'title', 
-    "completed": 'completed',
-  };
+
 export default function Todos()
  { 
     const [data, setData] = useState([]);
     useEffect(() => {
-		async function fetchData() {
-			let url = "https://jsonplaceholder.typicode.com/todos";
+		async function fetchData() {//realiza uma requisição get a Api 
+			let url = "https://jsonplaceholder.typicode.com/todos";//url da requisição
 			try {
-				let response = await fetch(url);
+				let response = await fetch(url);//chamada da requisição
 				let json = await response.json();
                 
-				setData(json);
+				setData(json);//atribuição dos dados 
 
 				return await response.json();
 			} catch (error) {}
 		}
 		fetchData();
 	}, []);
-  
 
-
-  return (
+  return (//retorno de todas as postagens
     <body>
        <h1 className="tituloPagina">Tarefas</h1>
       

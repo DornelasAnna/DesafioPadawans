@@ -8,13 +8,12 @@ import Home from './home';
 
 
 
-const App=()=>
+const App=()=>//Definição de componentes iniciais e declaração das urls
  {
+  
   return (
    
-    <BrowserRouter>
-       
-            
+    <BrowserRouter>     
           <Navbar/>
           <div > 
           <Switch>

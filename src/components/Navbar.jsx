@@ -1,7 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import "./style.css"
-const Navbar =() =>{
+/*Menu*/ 
+const Navbar =() =>
+{
 return(
    
     <div className=" App-header sticky">
@@ -10,16 +12,17 @@ return(
                 <div className="uk-navbar-right">
                     <ul className="uk-navbar-nav">
                         <li>
-                            <Link to="/" uk-icon="home"></Link>
+                            <a href="index.html">Home </a>
                         </li>
                         <li >
-                            <Link to="/Albuns">Albuns</Link>
+                            <a href="Albuns.html">Álbuns</a>
                         </li>
                         <li>
-                            <Link to="/Postagens">Postagens</Link>
+                            <a href="Postagens.html">Postagens</a>
+                            
                         </li>
                         <li>
-                            <Link to="/Todos">Tarefas</Link>
+                            <a href="Todos.html">Tarefas</a>
                         </li>
                     </ul>
                 </div>

@@ -1,17 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
 import App from './components/App';
-
-
-
 import reportWebVitals from './reportWebVitals';
+import Albuns from './components/Albuns';
+import Postagens from './components/Postagens';
+import Todos from './components/Todos';
+import Home from './components/home';
 
-ReactDOM.render(<App />,document.getElementById('root')
+ReactDOM.render(
+    <React.StrictMode>
+        <App/>
+        <Todos/>   
+    </React.StrictMode>    
+    ,document.getElementById('root')
 );
-
-    
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+    
+
+
