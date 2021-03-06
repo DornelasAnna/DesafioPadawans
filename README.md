@@ -8,14 +8,14 @@
 * HTML
 * CSS
 * JavaScript
-## bibliotecas:
-* UIKit
+* biblioteca
+  * UIKit
 
 
 # Pré-requisitos
   
   É possivel rodar o projeto de duas maneiras, uma delas pelos links das páginas presentes na pasta build,
-e outra rodando o projeto react.Mas para isso é necessario que o [Node.js](https://nodejs.org/en e o [React].(https://pt-br.reactjs.org/)
+e outra rodando o projeto react.Mas para isso, é necessario que o [Node.js](https://nodejs.org/en e o [React].(https://pt-br.reactjs.org/)
 estejam instalados em seu computador. 
 
 ##Rodando o projeto react:
@@ -33,4 +33,4 @@ $ yarn start
 
 
 
-Apos isso serápossivel rodar o projeto react em seu computador
+Apos isso será possivel rodar o projeto react em seu computador.
