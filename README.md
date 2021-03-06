@@ -8,7 +8,7 @@
 * HTML
 * CSS
 * JavaScript
-* biblioteca
+* bibliotecas
   * UIKit
 
 
